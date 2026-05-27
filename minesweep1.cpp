@@ -330,6 +330,7 @@ int main() {
                 if(str3.at(0)=='#')
                     cnt+=1;
                 str3.at(1)=cnt+'0';
+                cnt=0;
             }
             cout << str3 << endl;
         }
