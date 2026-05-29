@@ -6,11 +6,10 @@ int main(){
     cin >> n >> y;
     for(int i=0;i<=n;i++){
         for(int j=0;j<=n-i;j++){
-            for(int k=0;k<=n-i-j;k++){
-                if(1000*k + 5000*j + 10000*i == y){
-                    cout << i << " " << j << " " << k << endl;
-                    return 0;
-                }
+            int k=n-i-j;
+            if(10000 * i + 5000 * j + 1000 * k == y){
+                cout << i << " " << j << " " << k << endl;
+                return 0;
             }
         }
     }
